@@ -1,0 +1,39 @@
+1) to know python libraries you installed
+    
+    pip list
+
+
+2) installing virtualenv:
+    pip install virtualenv
+    
+3) creating virtualenv:
+    virtualenv -p python3.8 dj4
+    
+4) cd dj4/
+5) activate the virtualenv:
+    source bin/activate
+
+6) installing django:
+    pip install django
+
+7) making the src folder in dj4 :
+     mkdir src
+
+8) cd src
+9) starting the project :
+    django-admin startproject blog .
+10) runnig server :
+    python manage.py runserver
+11) to fix migrate error :
+    python manage.py migrate
+12) to run the page:
+    http://127.0.0.1:8000/
+13) to get in admin page :
+    http://127.0.0.1:8000/admin
+14) creating username $ password:
+    python manage.py createsuperuser
+15) to start new app :
+    django-admin startapp post  ( post is the name of the app)
+16) after making database for the app you need to migrate these updates :
+    python manage.py makemigrations
+    python manage.py migrate
